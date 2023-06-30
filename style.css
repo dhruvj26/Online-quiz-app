@@ -3,7 +3,7 @@
 }
 body {
     background-color: #b7b7df;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -13,20 +13,18 @@ body {
   }
   .Topic{
     background-color: #6b7894 ;
-    padding-left: 15px;
-    padding-right: 10px;
+    padding: 5px 15px 5px 10px;
     border-radius: 5px;
-    padding-top: 5px ;
-    padding-bottom: 5px ;
     margin-right: 10px;
+    font-size: 30px;
 
   }
 
   .quiz-container {
-    max-width: 500px;
+    max-width: 700px;
     background-color:#6b7894;
     border-radius: 10px;
-    padding: 20px;
+    padding: 100px;
     box-shadow: 0 0 10px rgba(209, 5, 5, 0.2);
     text-align: center;
 
@@ -35,7 +33,6 @@ body {
     display:grid;
     margin-right: 25px;
     margin-top: 10px ;
-
   }
   
   
