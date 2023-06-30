@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Quiz App</title>
+</head>
+<link rel="stylesheet" type="text/css" href="quiz.css">
+<body>
+    <nav>
+        <div class="Topic">Choose Topic</div>
+        <ul class="nav-buttons">
+          <button id= "maths" onclick=Maths()>Maths</button>
+          <button id= "chemistry" onclick=Chemistry()>Chemistry</button>
+          <button id= "physics" onclick= Physics()>Physics</button>
+        </ul>
+    </nav>
+  <div class="quiz-container">
+
+    <h1 id = "heading">Quiz</h1>
+    <div id="question-container">
+      <p id="question-text"></p>
+      <div id="answer-buttons"></div>
+    </div>
+    <div id="controls-container">
+      <div id="timer-container">
+        <span id="timer-text">Time Left: <span id="timer">100</span></span>
+      </div>
+    </div>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>
