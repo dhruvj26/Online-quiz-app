@@ -107,7 +107,7 @@ const maths =[
   function startQuiz(quizQuestions) {
     // Hide the start button and display the first question
     displayQuestion(quizQuestions);
-    startTimer();
+    startTimer(quizQuestions);
   }
   
   // Function to display a question and its options
@@ -157,7 +157,7 @@ const maths =[
   }
   
   // Function to start the timer
-  function startTimer() {
+  function startTimer(quizQuestions) {
     timerInterval = setInterval(function() {
       timeLeft--;
   
@@ -166,7 +166,7 @@ const maths =[
   
       // End the quiz if time runs out
       if (timeLeft <= 0) {
-        endQuiz();
+        endQuiz(quizQuestions);
       }
     }, 1000);
   }
@@ -187,7 +187,7 @@ const maths =[
       <p>Score Percentage: ${scorePercentage}%</p>
     `;
     timeLeft = 10
-    startTimer();
+    startTimer(quizQuestions);
     setTimeout(function(){
       location.reload()
     },10000)
